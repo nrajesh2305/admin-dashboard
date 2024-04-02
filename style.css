@@ -29,7 +29,7 @@ body
     align-items: center;
     font-weight: 500;
     padding-left: 0.25em;
-    font-size: 1.25em;
+    font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.32rem) * 0.478), 1.75rem); 
 }
 
 .dashboard-section div:nth-child(1)
@@ -78,7 +78,7 @@ body
 
 .dashboard_icon_choices
 {
-    width: 12.5%;
+    width: clamp(2rem, 2rem + ((1vw - 0.32rem) * 0.478), 2.5rem);
 }
 
 .name-section
