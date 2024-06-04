@@ -156,15 +156,42 @@ body
     cursor: pointer;
 }
 
+.intro-icon-grid
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.icon
+{
+    display: grid;
+    justify-self: center;
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    background: url(mango_the_bird_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 5.75em;
+    margin-bottom: 1em;
+}
+
 .achievements-and-info-section
 {
     display: grid;
     grid-area: 2 / 2 / 5 / 5;
     background-color: #E2E8F1;
     grid-template-areas:
-    "card card ..."
-    "card card ..."
-    "card card ...";
+    "card card ."
+    "card card ."
+    "card card .";
 }
 
 .card
