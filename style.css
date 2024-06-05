@@ -75,12 +75,7 @@ body
     padding-top: 0.5em;
 }
 
-.dashboard_icon
-{
-    width: clamp(2rem, 2rem + ((1vw - 0.32rem) * 0.478), 2.5rem);
-}
-
-.dashboard_icon_choices
+.dashboard_icon, .dashboard_icon_choices
 {
     width: clamp(2rem, 2rem + ((1vw - 0.32rem) * 0.478), 2.5rem);
 }
@@ -89,7 +84,6 @@ body
 {
     display: grid;
     grid-column: span 3;
-    background-color: #FFFFFF;
 }
 
 .name-section-grid
@@ -128,6 +122,24 @@ body
     width: 2vw;
     transform: translateX(-1.875em);
     min-height: 1ch;
+    cursor: pointer;
+}
+
+.bell-icon-grid
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 3fr;
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+img.bell-icon
+{
+    display: grid;
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: flex-end;
+    width: 12.5%;
+    margin-top: 0.5em;
     cursor: pointer;
 }
 
@@ -204,6 +216,7 @@ body
     display: grid;
     grid-area: 2 / 2 / 5 / 5;
     background-color: #E2E8F1;
+    box-shadow: inset 0 5px 3px -3px gray; 
     grid-template-areas:
     "card card ."
     "card card ."
