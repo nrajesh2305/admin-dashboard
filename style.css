@@ -31,7 +31,7 @@ body
     font-weight: 500;
     padding-left: 0.25em;
     align-items: center;
-    font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.32rem) * 0.478), 1.75rem);
+    font-size: 1.25rem;
     line-height: 2em;
 }
 
@@ -75,9 +75,14 @@ body
     padding-top: 0.5em;
 }
 
-.dashboard_icon, .dashboard_icon_choices
+.dashboard_icon
 {
-    width: clamp(2rem, 2rem + ((1vw - 0.32rem) * 0.478), 2.5rem);
+    width: 3rem;
+}
+
+.dashboard_icon_choices
+{
+    width: 2rem;
 }
 
 .name-section
@@ -140,6 +145,7 @@ img.bell-icon
     justify-self: flex-end;
     width: 12.5%;
     margin-top: 0.5em;
+    margin-right: 1em;
     cursor: pointer;
 }
 
@@ -189,10 +195,41 @@ img.bell-icon
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 50%;
     margin-left: 1.25em;
     margin-bottom: 1em;
+}
+
+.second-icon
+{
+    display: grid;
+    grid-area: 1 / 2 / 1 / 2;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-top: 0.25em;
+    margin-left: 1.75em;
+    width: 25%;
+    height: 60%;
+    background: url(mango_the_bird_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.account-name
+{
+    display: grid;
+    grid-area: 1 / 2 / 2 / 2;
+    justify-self: flex-end;
+    align-self: center;
+    font-size: 1.0625em;
+    margin-right: 1.125em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    position:sticky;
 }
 
 .intro
