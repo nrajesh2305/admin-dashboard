@@ -179,8 +179,24 @@ body
     background-size: contain;
     overflow: hidden;
     border-radius: 50%;
-    margin-left: 5.75em;
+    margin-left: 1.25em;
     margin-bottom: 1em;
+}
+
+.intro
+{
+    margin-left: 0.875em;
+    grid-area: 1 / 2 / 1 / 2;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.intro::first-line
+{
+    display: grid;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .achievements-and-info-section
