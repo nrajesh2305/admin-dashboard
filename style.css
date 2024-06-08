@@ -1,3 +1,8 @@
+:root 
+{
+    --system-ui: system-ui, "Roboto", sans-serif, Helvetica, Arial, sans-serif, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 body
 {
     margin: 0;
@@ -25,7 +30,7 @@ body
 .dashboard-section div
 {
     display: grid;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--system-ui);
     grid-template-columns: repeat(5, 1fr);
     color: white;
     font-weight: 500;
@@ -69,7 +74,7 @@ body
     color: white;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--system-ui);
     font-weight: bold;
     padding-left: 0.5em;
     padding-top: 0.5em;
@@ -169,7 +174,7 @@ img.bell-icon
     color: white;
     text-align: center;
     font-weight: bolder;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--system-ui);
     align-content: center;
     cursor: pointer;
 }
@@ -189,12 +194,12 @@ img.bell-icon
     grid-area: 1 / 1 / 1 / 1;
     justify-self: center;
     align-self: center;
-    width: 80%;
-    height: 80%;
+    width: 80px;
+    height: 80px;
     background: url(mango_the_bird_icon.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: top;
+    background-size: cover;
     /* overflow: hidden; */
     border-radius: 50%;
     margin-left: 1.25em;
@@ -209,12 +214,12 @@ img.bell-icon
     align-self: flex-start;
     margin-top: 0.25em;
     margin-left: 1.75em;
-    width: 25%;
-    height: 60%;
+    width: 80px;
+    height: 80px;
     background: url(mango_the_bird_icon.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: top;
+    background-size: cover;
     border-radius: 50%;
     margin-bottom: 1em;
 }
@@ -226,7 +231,7 @@ img.bell-icon
     justify-self: flex-end;
     align-self: center;
     font-size: 1.0625em;
-    margin-right: 1.125em;
+    padding-right: 1.125em;
     margin-bottom: 1.5em;
     font-weight: bold;
     position:sticky;
@@ -236,7 +241,7 @@ img.bell-icon
 {
     margin-left: 0.875em;
     grid-area: 1 / 2 / 1 / 2;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--system-ui);
     font-size: 1.5em;
     font-weight: bolder;
 }
@@ -262,7 +267,7 @@ img.bell-icon
 
 .card
 {
-    display: grid;
+    /* display: grid; */
     grid-area: card;
     border-radius: 15px;
     background-color: white;
