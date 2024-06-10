@@ -42,8 +42,7 @@ body
 
 .dashboard-section div:nth-child(1)
 {
-    margin-top: 0.25rem;
-    margin-bottom: 1.5rem;
+    margin: 0.25rem 0 1.5rem 0;
 }
 
 .dashboard-section div:nth-child(7)
@@ -119,9 +118,8 @@ body
     height: 85%;
     border-radius: 50px;
     background-color: #E2E8F0;
+    margin: 0.5em 0 0 5em;
     justify-self: center;
-    margin-top: 0.5em;
-    margin-left: 5em;
     cursor: text;
 }
 
@@ -200,10 +198,8 @@ img.bell-icon
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    /* overflow: hidden; */
     border-radius: 50%;
-    margin-left: 1.25em;
-    margin-bottom: 1em;
+    margin: 0 0 1em 1.25em;
 }
 
 .second-icon
@@ -212,8 +208,7 @@ img.bell-icon
     grid-area: 1 / 2 / 1 / 2;
     justify-self: flex-start;
     align-self: flex-start;
-    margin-top: 0.25em;
-    margin-left: 1.75em;
+    margin: 0.25em 0 1em 1.75em;
     width: 80px;
     height: 80px;
     background: url(mango_the_bird_icon.png);
@@ -221,7 +216,6 @@ img.bell-icon
     background-position: top;
     background-size: cover;
     border-radius: 50%;
-    margin-bottom: 1em;
 }
 
 .account-name
@@ -257,18 +251,98 @@ img.bell-icon
 {
     display: grid;
     grid-area: 2 / 2 / 5 / 5;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: #E2E8F1;
-    box-shadow: inset 0 5px 3px -3px gray; 
-    grid-template-areas:
-    "card card ."
-    "card card ."
-    "card card .";
+    box-shadow: inset 0 5px 3px -3px gray;
 }
 
-.card
+.text-labels
 {
-    /* display: grid; */
-    grid-area: card;
-    border-radius: 15px;
+    display: grid;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.your-projects-label, .announcements-label, .trending-label
+{
+    display: grid;
+    margin: 0.8em;
+}
+
+.your-projects-label
+{
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.projects
+{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: 1 / 1 / 5 / 3;
+    gap: 1.25em;
+    padding: 1.25em;
+    margin-top: 1.25em;
+    border-radius: 10%;
+}
+
+.project
+{
     background-color: white;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: inset 0 5px 3px -4px gray;
+    border-left: 10px solid #f0b429;
+}
+
+.announcements-label
+{
+    grid-area: 1 / 3 / 1 / 3;
+    width: fit-content;
+    height: fit-content;
+}
+
+.announcements
+{
+    display: grid;
+    grid-area: 1 / 3 / 3 / 3;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10%;
+    margin: 2em 1em 0 0;
+    box-shadow: inset 0 5px 3px -4px gray;
+}
+
+.announcements div
+{
+    width: 30ch;
+    min-height: 0.5em;
+    justify-content: center;
+    align-content: center;
+    margin: 0.5em 1.5em 0 1.5em;
+    font-size: small;
+    text-overflow: ellipsis;
+}
+
+.announcements div::first-line
+{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.trending-label
+{
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+.trending
+{
+    display: grid;
+    grid-area: 3 / 3 / 5 / 3;
+    background-color: white;
+    border-radius: 10%;
+    margin: 2em 1em 0.5em 0;
+    box-shadow: inset 0 5px 3px -4px gray;
 }
